@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css"> <!-- Link your custom CSS file -->
+    <title>Login - E-Video Cloud</title>
+    <style>
+        /* Custom styling to enhance the look */
+        body {
+            background-color: #141414; /* Dark background */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: #1c1c1c; /* Slightly lighter card background */
+            border: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(229, 9, 20, 0.3); /* Add slight red shadow effect */
+        }
+
+        .btn-danger {
+            background-color: #b80000; /* Netflix red color */
+            border: none;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn-danger:hover {
+            background-color: #e50914; /* Slightly brighter red */
+            transform: translateY(-2px);
+        }
+
+        .form-control {
+            background-color: #333;
+            border: 1px solid #444;
+            color: #fff;
+        }
+
+        .form-control:focus {
+            background-color: #444;
+            color: #fff;
+            border-color: #b80000;
+            box-shadow: none;
+        }
+
+        a {
+            color: #e50914; /* Netflix red color */
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        h2 {
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4">
+                    <h2 class="text-center mb-4">Login</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-block">Login</button>
+                    </form>
+                    <p class="text-center mt-3">Don't have an account? <a href="register.html">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

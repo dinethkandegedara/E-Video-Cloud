@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css"> <!-- Link your custom CSS file -->
+    <title>Home - E-Video Cloud</title>
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #181818;
+            color: #fff;
+        }
+
+        /* Navbar custom styles */
+        .navbar {
+            border-bottom: 1px solid #333;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #bbb !important;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-item.active .nav-link {
+            color: #fff !important;
+        }
+
+        /* Carousel styles */
+        .carousel-item {
+            height: 70vh;
+            min-height: 400px;
+            background: #000;
+            color: #fff;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Video Card styling */
+        .card {
+            background-color: #222;
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(255, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .btn-danger {
+            background-color: #e50914;
+            border: none;
+        }
+
+        .btn-danger:hover {
+            background-color: #f40612;
+        }
+
+        /* Footer styles */
+        footer {
+            border-top: 1px solid #333;
+            background-color: #000;
+        }
+
+        footer a {
+            color: #bbb;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">E-Video Cloud</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discover.html">Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="library.html">My Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./settings.html">Settings</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item d-none" id="logout-link">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Featured Carousel -->
+    <div id="featuredCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/img/movie-poster-background-5mlqnzbzbwpziyed.jpg" class="d-block w-100" alt="Featured Video 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>London Has Fallen</h5>
+                    <p>Enjoy the latest movies and shows on E-Video Cloud.</p>
+                </div>
+            </div>
+            <!-- Additional carousel items as required -->
+        </div>
+        <a class="carousel-control-prev" href="#featuredCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#featuredCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Popular Videos Section -->
+    <div class="container mt-5">
+        <h3 class="mb-4">Popular Videos</h3>
+        <div class="row">
+            <!-- Video Card 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./assets/img/movie-poster-background-5mlqnzbzbwpziyed.jpg" class="card-img-top" alt="Video 1">
+                    <div class="card-body">
+                        <h5 class="card-title">London Has Fallen</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#" class="btn btn-danger btn-block">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Video Card 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./assets/img/action-shot-with-man-riding-away-from-explosion-on-bike-dynamic-scene-with-fire-in-action-movie-blockbuster-style-generated-ai-photo.jpg" class="card-img-top" alt="Video 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fast Biker</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#" class="btn btn-danger btn-block">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Video Card 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./assets/img/pngtree-a-compelling-movie-poster-background-image_15605697.jpg" class="card-img-top" alt="Video 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Women</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#" class="btn btn-danger btn-block">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Video Card 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./assets/img/pngtree-a-craft-compelling-movie-poster-background-image_15611411.jpg" class="card-img-top" alt="Video 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Another World</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#" class="btn btn-danger btn-block">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 E-Video Cloud. All rights reserved.</p>
+            <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/auth.js"></script> <!-- Link to your custom JS file -->
+</body>
+</html>
